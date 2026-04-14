@@ -47,33 +47,13 @@ Jean,Martin,+33612000002,open-house;rue-garibaldi
 Claire,Bernard,+33612000003,open-house;rue-garibaldi
 ```
 
-Import all contacts:
-
-```bash
-python -c "
-import csv, subprocess, json
-
-with open('visitors.csv') as f:
-    for row in csv.DictReader(f):
-        result = subprocess.run(
-            ['insim', '--json', 'contacts', 'add', row['phone'],
-             '--firstname', row['firstname'], '--lastname', row['lastname']],
-            capture_output=True, text=True
-        )
-        data = json.loads(result.stdout)
-        contact_id = data.get('contact', {}).get('_id', '')
-        if contact_id:
-            tags = row.get('tags', '').split(';')
-            subprocess.run(['insim', 'contacts', 'tags-add', contact_id] + tags)
-            print(f'  Added: {row[\"firstname\"]} {row[\"lastname\"]}')
-"
-```
-
-Or use the ready-made script:
+Import all contacts using the ready-made script:
 
 ```bash
 python examples/automation/import-contacts-from-csv.py visitors.csv --list "Open House Rue Garibaldi"
 ```
+
+This script reads the CSV, creates each contact via the inSIM API, adds tags, and puts them all in a new list. See [`examples/automation/import-contacts-from-csv.py`](../../examples/automation/import-contacts-from-csv.py) for the full source.
 
 ### Step 2: Create a contact list
 
