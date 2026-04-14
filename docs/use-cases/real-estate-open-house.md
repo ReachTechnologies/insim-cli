@@ -135,9 +135,11 @@ Sophie's closing rate from open houses went from 6% to 15% — simply because sh
 
 ## Variations
 
-- [Insurance broker: SMS follow-up after quote](./insurance-broker-quote.md) *(coming soon)*
-- [Car dealership: Follow-up after test drive](./car-dealership-test-drive.md) *(coming soon)*
-- [Travel agent: Booking confirmation and reminders](./travel-agent-reminders.md) *(coming soon)*
+- [Insurance broker: SMS follow-up after quote](./insurance-broker-quote.md)
+- [Car dealership: Follow-up after test drive](./car-dealership-test-drive.md)
+- [Travel agent: Booking confirmation and reminders](./travel-agent-reminders.md)
+- [Recruitment: Campus outreach by SMS](./recruitment-campus-outreach.md)
+- [Collections: Invoice follow-up SMS](./collections-invoice-followup.md)
 
 ## Related study cases
 
