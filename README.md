@@ -159,9 +159,16 @@ insim> exit
 
 ## Study Cases
 
-- [Real estate agent: SMS follow-up after open house](./docs/use-cases/) *(coming soon)*
-- [E-commerce: AI agent answering SMS at night](./docs/use-cases/) *(coming soon)*
-- [Growth hacker: Abandoned cart SMS via n8n](./docs/use-cases/) *(coming soon)*
+| Sector | Use Case | Description |
+|--------|----------|-------------|
+| Real estate | [Open house SMS follow-up](./docs/use-cases/real-estate-open-house.md) | Import visitors, send tracked campaign, prioritize hot prospects |
+| Insurance | [Quote follow-up](./docs/use-cases/insurance-broker-quote.md) | SMS follow-up after sending quotes with click tracking |
+| Automotive | [Test drive follow-up](./docs/use-cases/car-dealership-test-drive.md) | Post-test-drive satisfaction survey + second visit booking |
+| Travel | [Booking reminders](./docs/use-cases/travel-agent-reminders.md) | Automated departure reminders (7 days + 1 day before) |
+| Recruitment | [Campus outreach](./docs/use-cases/recruitment-campus-outreach.md) | Mass SMS to event contacts with application link |
+| Finance | [Invoice follow-up](./docs/use-cases/collections-invoice-followup.md) | Graduated payment reminders with tracked payment links |
+
+> See also: [insim-mcp study cases](https://github.com/ReachTechnologies/insim-mcp#study-cases) (AI agents) and [n8n-nodes-insim study cases](https://github.com/ReachTechnologies/n8n-nodes-insim#study-cases) (no-code workflows).
 
 ## Installation from source
 
